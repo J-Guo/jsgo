@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First JQuery Start</title>
+    <!-- Insert jQuery-->
+    <script src="../js/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+    <!--Display Helloworld message -->
+    <script type="text/javascript">
+//    $('document').ready(function(){
+//        $('body').append('<p>Hello World</p>')}
+//    );
+
+        window.addEventListener("DOMContentLoaded",function(evt){
+            var elem = document.getElementsByTagName('body')[0];
+            var para = document.createElement("p");
+            var text = document.createTextNode("This page is just loaded");
+            para.appendChild(text);
+            elem.appendChild(para);
+
+        });
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
