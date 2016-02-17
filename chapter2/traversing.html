@@ -7,7 +7,19 @@
     <script type="text/javascript">
         $("document").ready(function() {
 
-            $("#example").children().css("border", "3px solid red");
+//            $("#example").children().css("border", "3px solid red");
+
+            var elem = $("#para1");
+//            elem.prev().css("border", "3px solid red");
+//            elem.next().css("border", "3px solid green");
+//            elem.parents().css("border", "3px solid blue");
+//            elem.parentsUntil($("body")).css("border", "3px solid blue");
+
+            // use the find function to locate content within
+            // particular elements
+            $("#example").find("#para4").css("border", "3px solid red");
+
+
         });
     </script>
 </head>
