@@ -7,8 +7,20 @@
     <script type="text/javascript">
         $("document").ready(function() {
 
-//            $("#example p").wrap("<div style='color:red'/>");
+//          $("#example p").wrap("<p style='color:#ff29c5'/>");
 //            $("#example p").wrapAll("<div style='border:3px solid red'/>");
+//            $("#example").empty();
+//            $("#example p.a").remove();
+//            $("#example p.a, #example p.b").detach();
+//            $("<div>replaced</div>").replaceAll($("#example").find("p[id]"));
+//            $("#example p[class]").replaceWith("<div>replaced</div>");
+            $("#example p").replaceWith(replacementFn);
+
+            function replacementFn() {
+                if ($(this).text().indexOf("1") != -1) {
+                    return "<p>This is paragraph uno</p>";
+                }
+            }
 
         });
     </script>
