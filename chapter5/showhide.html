@@ -6,7 +6,24 @@
     <script type="text/javascript" src="../jquery-2.2.0.min.js"></script>
     <script type="text/javascript">
         $(function() {
+
+
+            $("#show").on('click',function() {
+                $("#theDiv").show("slow");
+            });
+            $("#hide").click(function() {
+                $("#theDiv").hide(200,"swing");
+            });
+            $("#toggle").click(function() {
+                $("#theDiv").toggle("slow");
+            });
+
         });
+
+        function completion() {
+            // the value of this is set to the DOM element being affected
+            $(this).text("Animation complete");
+        }
     </script>
     <style type="text/css">
         #theDiv {
