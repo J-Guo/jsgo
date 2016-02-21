@@ -19,7 +19,8 @@
             $.get("testdata.txt", function(result){
                 console.log("Setting result");
                 $("#content").append(result);
-            });
+            })
+                    .done();
         }
 
         function successFn(result) {
