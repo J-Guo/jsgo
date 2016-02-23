@@ -16,10 +16,11 @@
 
         function getData() {
 
-            $.get("testdata.txt", function(result){
-                console.log("Setting result");
-                $("#content").append(result);
-            });
+//            $.get("testdata.txt", function(result){
+//                console.log("Setting result");
+//                $("#content").append(result);
+//            });
+            $("#content").load("testdata.html p:last");
 
         }
 
